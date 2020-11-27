@@ -1,0 +1,92 @@
+#heading {
+  margin-block-start: auto;
+}
+
+.home-img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#fav-game-banner {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#game-title {
+  text-align: center;
+}
+
+.vg-icon {
+  max-width: 100%;
+  max-height: 100%;
+  border: 3px solid white;
+  border-radius: 6px;
+  margin: 10px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+.image:hover .overlay{
+  opacity: 1;
+}
+
+.vg-icon-fav {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border: 3px solid gold;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.text {
+  color: white;
+  font-size: 12.5px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+button {
+  background-color:rgb(152, 204, 152);
+  border-radius: 2px;
+  border:none;
+  height: 40px;
+  margin-left: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}

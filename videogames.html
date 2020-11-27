@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" style="height:100%">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/games.js"></script>
+  <title>Home</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">BRANDON RAGNAUTH</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Other
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Items</a>
+              <a class="dropdown-item" href="/videogames.html">Video Games<span class="sr-only">(current)</span></a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div style="background-color: black;">
+    <div class="container-fluid p-3 my-3 bg-dark text-white" id="game-title">
+      <h1>Video Games</h1>
+      <h4>Video games are important to me. I've played them for as long as I can remember. Video games gave me an appreciation for art, writing, music, effort, and many things. I wouldn't be the person who I am if it weren't for video games (and friends and family).</h4>
+    </div>
+    <div>
+      <img id="fav-game-banner" src="./img/fav-game-banner.png" usemap="#fav-game-map">
+    </div>
+    <div>
+
+    </div>
+    <div class="container p-3 my-3 text-white" id="game-container">
+      <button onclick="sortGames(1)">Sort Title A-Z</button>
+      <button onclick="sortGames(2)">Sort Series A-Z</button>
+      <button onclick="sortGames(3)">Sort Platform A-Z</button>
+      <div class="row" id="game-display">
+
+      </div>
+    </div>
+  </div>
+    <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+</body>
+
+</html>
