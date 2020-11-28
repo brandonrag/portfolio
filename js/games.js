@@ -25,7 +25,30 @@ var imagePaths = [
   './img/videogames/messenger.png',
   './img/videogames/p3.png',
   './img/videogames/bw.png',
-  './img/videogames/tp.png'
+  './img/videogames/tp.png',
+  './img/videogames/dr2.png',
+  './img/videogames/ff1-2.png',
+  './img/videogames/papermario.png',
+  './img/videogames/ssbb.png',
+  './img/videogames/xcx.png',
+  './img/videogames/sov.png',
+  './img/videogames/okamiden.png',
+  './img/videogames/tla.png',
+  './img/videogames/swsh.png',
+  './img/videogames/oot.png',
+  './img/videogames/aj.png',
+  './img/videogames/sms.png',
+  './img/videogames/pikmin.png',
+  './img/videogames/ff5.png',
+  './img/videogames/eb.png',
+  './img/videogames/xc2.png',
+  './img/videogames/drv3.png',
+  './img/videogames/fusion.png',
+  './img/videogames/frlg.png',
+  './img/videogames/ssbu.png',
+  './img/videogames/acnh.png',
+  './img/videogames/dd.png',
+  './img/videogames/portal.png'
 ];
 var favImagePaths = ['./img/videogames/fe-por.png', './img/videogames/gs.png', './img/videogames/p5.png', './img/videogames/okami.png', './img/videogames/botw.png'];
 
@@ -65,7 +88,7 @@ function createGames(){
 
   games.push(new Game(images[0], 'Celeste','', 'PC', '10/10'));
   games.push(new Game(images[1], 'Trigger Happy Havoc','Danganronpa', 'PC', '7/10'));
-  games.push(new Game(images[2], 'Final Fantasy 8','Final Fantasy', 'PC', '8/10'));
+  games.push(new Game(images[2], 'Final Fantasy VIII','Final Fantasy', 'PC', '8/10'));
   games.push(new Game(images[3], 'Mother 3','EarthBound', 'Game Boy Advance', '10/10'));
   games.push(new Game(images[4], 'Super Mario 64','Super Mario', 'Wii Virtual Console', '8/10'));
   games.push(new Game(images[5], 'Platinum','Pokémon', 'Nintendo DS', '10/10'));
@@ -85,6 +108,29 @@ function createGames(){
   games.push(new Game(images[19], 'Persona 3 FES', 'Persona', 'Playstation 3', '9/10'));
   games.push(new Game(images[20], 'Black and White', 'Pokémon', 'Nintendo DS', '9/10'));
   games.push(new Game(images[21], 'Twilight Princess', 'Legend of Zelda, The', 'Wii', '10/10'));
+  games.push(new Game(images[22], 'Danganronpa 2: Goodbye Despair', 'Danganronpa', 'PC', '7/10'));
+  games.push(new Game(images[23], 'Final Fantasy I & II: Dawn of Souls', 'Final Fantasy', 'Game Boy Advance', '7/10'));
+  games.push(new Game(images[24], 'Paper Mario', 'Paper Mario', 'Wii Virtual Console', '9/10'));
+  games.push(new Game(images[25], 'Super Smash Bros. Brawl', 'Super Smash Bros.', 'Wii', '9/10'));
+  games.push(new Game(images[26], 'Xenoblade Chronicles X', 'Xenoblade Chronicles', 'Wii U', '9/10'));
+  games.push(new Game(images[27], 'Echoes: Shadows of Valentia', 'Fire Emblem', 'Nintendo 3DS', '9/10'));
+  games.push(new Game(images[28], 'Okamiden', 'Okami', 'Nintendo DS', '8/10'));
+  games.push(new Game(images[29], 'The Lost Age', 'Golden Sun', 'Game Boy Advance', '10/10'));
+  games.push(new Game(images[30], 'Sword and Shield', 'Pokémon', 'Nintendo Switch', '7/10'));
+  games.push(new Game(images[31], 'Ocarina of Time', 'Legend of Zelda, The', 'Wii Virtual Console', '10/10'));
+  games.push(new Game(images[32], 'Apollo Justice', 'Ace Attorney', 'Wii Virtual Console', '7/10'));
+  games.push(new Game(images[33], 'Super Mario Sunshine', 'Super Mario', 'GameCube', '7/10'));
+  games.push(new Game(images[34], 'Pikmin', 'Pikmin', 'Wii', '8/10'));
+  games.push(new Game(images[35], 'Final Fantasy V', 'Final Fantasy', 'Game Boy Advance', '7/10'));
+  games.push(new Game(images[36], 'EarthBound', 'EarthBound', 'SNES', '8/10'));
+  games.push(new Game(images[37], 'Xenoblade Chronicles 2', 'Xenoblade Chronicles', 'Nintendo Switch', '8/10'));
+  games.push(new Game(images[38], 'Danganronpa V3: Killing Harmony', 'Danganronpa', 'PC', '8/10'));
+  games.push(new Game(images[39], 'Metroid Fusion', 'Metroid', 'Game Boy Advance', '9/10'));
+  games.push(new Game(images[40], 'FireRed and LeafGreen', 'Pokémon', 'Game Boy Advance', '8/10'));
+  games.push(new Game(images[41], 'Super Smash Bros. Ultimate', 'Super Smash Bros.', 'Nintendo Switch', '9/10'));
+  games.push(new Game(images[42], 'New Horizons', 'Animal Crossing', 'Nintendo Switch', '8/10'));
+  games.push(new Game(images[43], 'Dark Dawn', 'Golden Sun', 'Nintendo DS', '9/10'));
+  games.push(new Game(images[44], 'Portal', 'Portal', 'PC', '9/10'));
 
 }
 
