@@ -84,6 +84,7 @@ button {
   border:none;
   height: 40px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 button:hover {
