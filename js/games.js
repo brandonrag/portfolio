@@ -101,66 +101,72 @@ function createGames(){
   favGames.push(new Game(favImages[3], 'Okami', 'Okami', 'Wii', 10));
   favGames.push(new Game(favImages[4], 'Breath of the Wild','Legend of Zelda, The', 'Wii U', 9));
 
-  games.push(new Game(images[0], 'Celeste','', 'PC', 10));
-  games.push(new Game(images[1], 'Trigger Happy Havoc','Danganronpa', 'PC', 7));
-  games.push(new Game(images[2], 'Final Fantasy VIII','Final Fantasy', 'PC', 8));
-  games.push(new Game(images[3], 'Mother 3','EarthBound', 'Game Boy Advance', 10));
-  games.push(new Game(images[4], 'Super Mario 64','Super Mario', 'Wii Virtual Console', 8));
-  games.push(new Game(images[5], 'Platinum','Pokémon', 'Nintendo DS', 10));
-  games.push(new Game(images[6], 'Super Metroid','Metroid', 'Wii Virtual Console', 10));
-  games.push(new Game(images[7], 'Tales of Symphonia','Tales', 'GameCube', '10/10'));
-  games.push(new Game(images[8], 'The World Ends With You','The World Ends With You', 'Nintendo DS', 10));
-  games.push(new Game(images[9], 'Xenoblade Chronicles','Xenoblade Chronicles', 'Wii', 10));
-  games.push(new Game(images[10], 'New Leaf','Animal Crossing', 'Nintendo 3DS', 9));
-  games.push(new Game(images[11], 'Minecraft','Minecraft', 'PC', '7/10'));
-  games.push(new Game(images[12], 'Devil Survivor Overclocked','Shin Megami Tensei', 'Nintendo 3DS', 9));
-  games.push(new Game(images[13], 'Pikmin 3','Pikmin', 'Wii U', 9));
-  games.push(new Game(images[14], 'Chrono Trigger','Chrono', 'Wii Virtual Console', 10));
-  games.push(new Game(images[15], 'Aria of Sorrow','Castlevania', 'Game Boy Advance', 10));
-  games.push(new Game(images[16], 'Donkey Kong Country 2: Diddy\'s Kong Quest','Donkey Kong Country', 'Wii Virtual Console', 10));
-  games.push(new Game(images[17], 'Phoenix Wright: Trials and Tribulations','Ace Attorney', 'Nintendo DS', 10));
-  games.push(new Game(images[18], 'The Messenger', '', 'Nintendo Switch', 10));
-  games.push(new Game(images[19], 'Persona 3 FES', 'Persona', 'Playstation 3', 9));
-  games.push(new Game(images[20], 'Black and White', 'Pokémon', 'Nintendo DS', 9));
-  games.push(new Game(images[21], 'Twilight Princess', 'Legend of Zelda, The', 'Wii', '10/10'));
-  games.push(new Game(images[22], 'Danganronpa 2: Goodbye Despair', 'Danganronpa', 'PC', 7));
-  games.push(new Game(images[23], 'Final Fantasy I & II: Dawn of Souls', 'Final Fantasy', 'Game Boy Advance', 7));
-  games.push(new Game(images[24], 'Paper Mario', 'Paper Mario', 'Wii Virtual Console', 9));
-  games.push(new Game(images[25], 'Super Smash Bros. Brawl', 'Super Smash Bros.', 'Wii', 9));
-  games.push(new Game(images[26], 'Xenoblade Chronicles X', 'Xenoblade Chronicles', 'Wii U', 9));
-  games.push(new Game(images[27], 'Echoes: Shadows of Valentia', 'Fire Emblem', 'Nintendo 3DS', 9));
-  games.push(new Game(images[28], 'Okamiden', 'Okami', 'Nintendo DS', 8));
-  games.push(new Game(images[29], 'The Lost Age', 'Golden Sun', 'Game Boy Advance', 10));
-  games.push(new Game(images[30], 'Sword and Shield', 'Pokémon', 'Nintendo Switch', 7));
-  games.push(new Game(images[31], 'Ocarina of Time', 'Legend of Zelda, The', 'Wii Virtual Console', 10));
-  games.push(new Game(images[32], 'Apollo Justice', 'Ace Attorney', 'Wii Virtual Console', 7));
-  games.push(new Game(images[33], 'Super Mario Sunshine', 'Super Mario', 'GameCube', 7));
-  games.push(new Game(images[34], 'Pikmin', 'Pikmin', 'Wii', 8));
-  games.push(new Game(images[35], 'Final Fantasy V', 'Final Fantasy', 'Game Boy Advance', 7));
-  games.push(new Game(images[36], 'EarthBound', 'EarthBound', 'SNES', 8));
-  games.push(new Game(images[37], 'Xenoblade Chronicles 2', 'Xenoblade Chronicles', 'Nintendo Switch', 8));
-  games.push(new Game(images[38], 'Danganronpa V3: Killing Harmony', 'Danganronpa', 'PC', 8));
-  games.push(new Game(images[39], 'Metroid Fusion', 'Metroid', 'Game Boy Advance', 9));
-  games.push(new Game(images[40], 'FireRed and LeafGreen', 'Pokémon', 'Game Boy Advance', 8));
-  games.push(new Game(images[41], 'Super Smash Bros. Ultimate', 'Super Smash Bros.', 'Nintendo Switch', 9));
-  games.push(new Game(images[42], 'New Horizons', 'Animal Crossing', 'Nintendo Switch', 8));
-  games.push(new Game(images[43], 'Dark Dawn', 'Golden Sun', 'Nintendo DS', 9));
-  games.push(new Game(images[44], 'Portal', 'Portal', 'PC', 9));
-  games.push(new Game(images[45], 'The Thousand Year Door', 'Paper Mario', 'GameCube', 10));
-  games.push(new Game(images[46], 'Minish Cap', 'Legend of Zelda, The', 'Game Boy Advance', 10));
-  games.push(new Game(images[47], 'Phoenix Wright: Ace Attorney', 'Ace Attorney', 'Nintendo DS', 9));
-  games.push(new Game(images[48], 'Donkey Kong Country', 'Donkey Kong Country', 'Wii Virtual Console', 9));
-  games.push(new Game(images[49], 'Awakening', 'Fire Emblem', 'Nintendo 3DS', 7));
-  games.push(new Game(images[50], 'Zero Mission', 'Metroid', 'Game Boy Advance', 8));
-  games.push(new Game(images[51], 'X and Y', 'Pokémon', 'Nintendo 3DS', 7));
-  games.push(new Game(images[52], 'Sonic Colors', 'Sonic', 'Nintendo DS', 8));
-  games.push(new Game(images[53], 'Super Smash Bros. for Wii U', 'Super Smash Bros.', 'Wii U', 8));
-  games.push(new Game(images[54], 'Wild World', 'Animal Crossing', 'Nintendo DS', 7));
-  games.push(new Game(images[55], 'Xenoblade Chronicles 2: Torna The Golden Country', 'Xenoblade Chronicles', 'Nintendo Switch', 10));
-  games.push(new Game(images[56], 'EarthBound Beginnings', 'EarthBound', 'Wii U', 7));
-  games.push(new Game(images[57], 'Portal 2', 'Portal', 'PC', 10));
-  games.push(new Game(images[58], 'Super Mario Galaxy', 'Super Mario', 'Wii', 8));
-  games.push(new Game(images[59], 'Pikmin 2', 'Pikmin', 'Wii', 7));
+  games.push(new Game(favImages[0], 'Path of Radiance','Fire Emblem', 'GameCube', 10));
+  games.push(new Game(favImages[1], 'Golden Sun','Golden Sun', 'Game Boy Advance', 10));
+  games.push(new Game(favImages[2], 'Persona 5','Persona', 'Playstation 3', 10));
+  games.push(new Game(favImages[3], 'Okami', 'Okami', 'Wii', 10));
+  games.push(new Game(favImages[4], 'Breath of the Wild','Legend of Zelda, The', 'Wii U', 9));
+
+  games.push(new Game(images[5], 'Celeste','', 'PC', 10));
+  games.push(new Game(images[6], 'Trigger Happy Havoc','Danganronpa', 'PC', 7));
+  games.push(new Game(images[7], 'Final Fantasy VIII','Final Fantasy', 'PC', 8));
+  games.push(new Game(images[8], 'Mother 3','EarthBound', 'Game Boy Advance', 10));
+  games.push(new Game(images[9], 'Super Mario 64','Super Mario', 'Wii Virtual Console', 8));
+  games.push(new Game(images[10], 'Platinum','Pokémon', 'Nintendo DS', 10));
+  games.push(new Game(images[11], 'Super Metroid','Metroid', 'Wii Virtual Console', 10));
+  games.push(new Game(images[12], 'Tales of Symphonia','Tales', 'GameCube', '10/10'));
+  games.push(new Game(images[13], 'The World Ends With You','The World Ends With You', 'Nintendo DS', 10));
+  games.push(new Game(images[14], 'Xenoblade Chronicles','Xenoblade Chronicles', 'Wii', 10));
+  games.push(new Game(images[15], 'New Leaf','Animal Crossing', 'Nintendo 3DS', 9));
+  games.push(new Game(images[16], 'Minecraft','Minecraft', 'PC', '7/10'));
+  games.push(new Game(images[17], 'Devil Survivor Overclocked','Shin Megami Tensei', 'Nintendo 3DS', 9));
+  games.push(new Game(images[18], 'Pikmin 3','Pikmin', 'Wii U', 9));
+  games.push(new Game(images[19], 'Chrono Trigger','Chrono', 'Wii Virtual Console', 10));
+  games.push(new Game(images[20], 'Aria of Sorrow','Castlevania', 'Game Boy Advance', 10));
+  games.push(new Game(images[21], 'Donkey Kong Country 2: Diddy\'s Kong Quest','Donkey Kong Country', 'Wii Virtual Console', 10));
+  games.push(new Game(images[22], 'Phoenix Wright: Trials and Tribulations','Ace Attorney', 'Nintendo DS', 10));
+  games.push(new Game(images[23], 'The Messenger', '', 'Nintendo Switch', 10));
+  games.push(new Game(images[24], 'Persona 3 FES', 'Persona', 'Playstation 3', 9));
+  games.push(new Game(images[25], 'Black and White', 'Pokémon', 'Nintendo DS', 9));
+  games.push(new Game(images[26], 'Twilight Princess', 'Legend of Zelda, The', 'Wii', '10/10'));
+  games.push(new Game(images[27], 'Danganronpa 2: Goodbye Despair', 'Danganronpa', 'PC', 7));
+  games.push(new Game(images[28], 'Final Fantasy I & II: Dawn of Souls', 'Final Fantasy', 'Game Boy Advance', 7));
+  games.push(new Game(images[29], 'Paper Mario', 'Paper Mario', 'Wii Virtual Console', 9));
+  games.push(new Game(images[30], 'Super Smash Bros. Brawl', 'Super Smash Bros.', 'Wii', 9));
+  games.push(new Game(images[31], 'Xenoblade Chronicles X', 'Xenoblade Chronicles', 'Wii U', 9));
+  games.push(new Game(images[32], 'Echoes: Shadows of Valentia', 'Fire Emblem', 'Nintendo 3DS', 9));
+  games.push(new Game(images[33], 'Okamiden', 'Okami', 'Nintendo DS', 8));
+  games.push(new Game(images[34], 'The Lost Age', 'Golden Sun', 'Game Boy Advance', 10));
+  games.push(new Game(images[35], 'Sword and Shield', 'Pokémon', 'Nintendo Switch', 7));
+  games.push(new Game(images[36], 'Ocarina of Time', 'Legend of Zelda, The', 'Wii Virtual Console', 10));
+  games.push(new Game(images[37], 'Apollo Justice', 'Ace Attorney', 'Wii Virtual Console', 7));
+  games.push(new Game(images[38], 'Super Mario Sunshine', 'Super Mario', 'GameCube', 7));
+  games.push(new Game(images[39], 'Pikmin', 'Pikmin', 'Wii', 8));
+  games.push(new Game(images[40], 'Final Fantasy V', 'Final Fantasy', 'Game Boy Advance', 7));
+  games.push(new Game(images[41], 'EarthBound', 'EarthBound', 'SNES', 8));
+  games.push(new Game(images[42], 'Xenoblade Chronicles 2', 'Xenoblade Chronicles', 'Nintendo Switch', 8));
+  games.push(new Game(images[43], 'Danganronpa V3: Killing Harmony', 'Danganronpa', 'PC', 8));
+  games.push(new Game(images[44], 'Metroid Fusion', 'Metroid', 'Game Boy Advance', 9));
+  games.push(new Game(images[45], 'FireRed and LeafGreen', 'Pokémon', 'Game Boy Advance', 8));
+  games.push(new Game(images[46], 'Super Smash Bros. Ultimate', 'Super Smash Bros.', 'Nintendo Switch', 9));
+  games.push(new Game(images[47], 'New Horizons', 'Animal Crossing', 'Nintendo Switch', 8));
+  games.push(new Game(images[48], 'Dark Dawn', 'Golden Sun', 'Nintendo DS', 9));
+  games.push(new Game(images[49], 'Portal', 'Portal', 'PC', 9));
+  games.push(new Game(images[50], 'The Thousand Year Door', 'Paper Mario', 'GameCube', 10));
+  games.push(new Game(images[51], 'Minish Cap', 'Legend of Zelda, The', 'Game Boy Advance', 10));
+  games.push(new Game(images[52], 'Phoenix Wright: Ace Attorney', 'Ace Attorney', 'Nintendo DS', 9));
+  games.push(new Game(images[53], 'Donkey Kong Country', 'Donkey Kong Country', 'Wii Virtual Console', 9));
+  games.push(new Game(images[54], 'Awakening', 'Fire Emblem', 'Nintendo 3DS', 7));
+  games.push(new Game(images[55], 'Zero Mission', 'Metroid', 'Game Boy Advance', 8));
+  games.push(new Game(images[56], 'X and Y', 'Pokémon', 'Nintendo 3DS', 7));
+  games.push(new Game(images[57], 'Sonic Colors', 'Sonic', 'Nintendo DS', 8));
+  games.push(new Game(images[58], 'Super Smash Bros. for Wii U', 'Super Smash Bros.', 'Wii U', 8));
+  games.push(new Game(images[59], 'Wild World', 'Animal Crossing', 'Nintendo DS', 7));
+  games.push(new Game(images[60], 'Xenoblade Chronicles 2: Torna The Golden Country', 'Xenoblade Chronicles', 'Nintendo Switch', 10));
+  games.push(new Game(images[61], 'EarthBound Beginnings', 'EarthBound', 'Wii U', 7));
+  games.push(new Game(images[62], 'Portal 2', 'Portal', 'PC', 10));
+  games.push(new Game(images[63], 'Super Mario Galaxy', 'Super Mario', 'Wii', 8));
+  games.push(new Game(images[64], 'Pikmin 2', 'Pikmin', 'Wii', 7));
 
 }
 
@@ -178,7 +184,7 @@ function displayGames() {
     colNum = 2;
   }
   // 5 Favourite Games
-  for (let i = 0; i < colNum; i++) {
+  for (let i = 0; i < 5; i++) {
     // Create col div
     div = document.createElement("div");
     div.className = "col";
@@ -187,29 +193,29 @@ function displayGames() {
     divImg = document.createElement("div");
     divImg.className = "image";
     favGames[i].image.id = favGames[i].title;
-    divImg.appendChild(favGames[i].image);
+    // divImg.appendChild(favGames[i].image);
 
     // Overlay for text on hover
     overlay = document.createElement("div");
     overlay.className = "overlay";
 
     // Hover functions
-    overlay.onmouseenter = function(){
-      var g = document.getElementById(favGames[i].title);
-      g.style.transform = "scale(1.05)";
-      g.style.transition = "0.2s ease";
-      g.style.opacity = 0.6;
-    }
-    overlay.onmouseleave = function() {
-      var g = document.getElementById(favGames[i].title);
-      g.style.transform = "scale(1)";
-      g.style.opacity = 1;
-    }
+    // overlay.onmouseenter = function(){
+    //   var g = document.getElementById(favGames[i].title);
+    //   g.style.transform = "scale(1.05)";
+    //   g.style.transition = "0.2s ease";
+    //   g.style.opacity = 0.6;
+    // }
+    // overlay.onmouseleave = function() {
+    //   var g = document.getElementById(favGames[i].title);
+    //   g.style.transform = "scale(1)";
+    //   g.style.opacity = 1;
+    // }
 
     // Text for on hover
     text = document.createElement("div");
-    text.className = "text";
-    text.innerHTML = favGames[i].title + "<br><br>" + favGames[i].series + "<br><br>" + favGames[i].platform + "<br><br>" + favGames[i].rating + "/10";
+    // text.className = "text";
+    // text.innerHTML = favGames[i].title + "<br><br>" + favGames[i].series + "<br><br>" + favGames[i].platform + "<br><br>" + favGames[i].rating + "/10";
     
     overlay.appendChild(text);
     divImg.appendChild(overlay);
@@ -244,13 +250,13 @@ function displayGames() {
  
       // Hover functions
       overlay.onmouseenter = function(){
-        var g = document.getElementById(games[5 * j + k].title);
+        var g = document.getElementById(games[colNum * j + k].title);
         g.style.transform = "scale(1.05)";
         g.style.opacity = 0.6;
         g.style.transition = "0.2s ease";
       }
       overlay.onmouseleave = function() {
-        var g = document.getElementById(games[5 * j + k].title);
+        var g = document.getElementById(games[colNum * j + k].title);
         g.style.transform = "scale(1)";
         g.style.opacity = 1;
       }
