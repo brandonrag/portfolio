@@ -72,12 +72,11 @@ var imagePaths = [
 var favImagePaths = ['./img/videogames/fe-por.png', './img/videogames/gs.png', './img/videogames/p5.png', './img/videogames/okami.png', './img/videogames/botw.png'];
 
 class Game {
-  constructor(image, title, series, platform, rating, date){
+  constructor(image, title, series, platform, date){
     this.image = image;
     this.title = title;
     this.series = series;
     this.platform = platform;
-    this.rating = rating;
     this.date = date;
   }
 }
@@ -100,81 +99,81 @@ function createImages(){
 }
 
 function createGames(){
-  favGames.push(new Game(favImages[0], 'Path of Radiance','Fire Emblem', 'GameCube', 10, new Date("Oct 15 2020")));
-  favGames.push(new Game(favImages[1], 'Golden Sun','Golden Sun', 'Game Boy Advance', 10));
-  favGames.push(new Game(favImages[2], 'Persona 5','Persona', 'Playstation 3', 10));
-  favGames.push(new Game(favImages[3], 'Okami', 'Okami', 'Wii', 10));
-  favGames.push(new Game(favImages[4], 'Breath of the Wild','Legend of Zelda, The', 'Wii U', 9));
+  favGames.push(new Game(favImages[0], 'Path of Radiance','Fire Emblem', 'GameCube', new Date("Oct 15 2020")));
+  favGames.push(new Game(favImages[1], 'Golden Sun','Golden Sun', 'Game Boy Advance'));
+  favGames.push(new Game(favImages[2], 'Persona 5','Persona', 'Playstation 3'));
+  favGames.push(new Game(favImages[3], 'Okami', 'Okami', 'Wii'));
+  favGames.push(new Game(favImages[4], 'Breath of the Wild','Legend of Zelda, The', 'Wii U'));
 
-  games.push(new Game(favImages[0], 'Path of Radiance','Fire Emblem', 'GameCube', 10, new Date("Oct 15 2020")));
-  games.push(new Game(favImages[1], 'Golden Sun','Golden Sun', 'Game Boy Advance', 10, new Date("Aug 8 2020")));
-  games.push(new Game(favImages[2], 'Persona 5','Persona', 'Playstation 3', 10, new Date("1901")));
-  games.push(new Game(favImages[3], 'Okami', 'Okami', 'Wii', 10, new Date("1901")));
-  games.push(new Game(favImages[4], 'Breath of the Wild','Legend of Zelda, The', 'Wii U', 9, new Date("1901")));
+  games.push(new Game(favImages[0], 'Path of Radiance','Fire Emblem', 'GameCube', new Date("Oct 15 2020")));
+  games.push(new Game(favImages[1], 'Golden Sun','Golden Sun', 'Game Boy Advance', new Date("Aug 8 2020")));
+  games.push(new Game(favImages[2], 'Persona 5','Persona', 'Playstation 3', new Date("1901")));
+  games.push(new Game(favImages[3], 'Okami', 'Okami', 'Wii', new Date("1901")));
+  games.push(new Game(favImages[4], 'Breath of the Wild','Legend of Zelda, The', 'Wii U', new Date("1901")));
 
-  games.push(new Game(images[0], 'Celeste','', 'PC', 10, new Date("1901")));
-  games.push(new Game(images[1], 'Trigger Happy Havoc','Danganronpa', 'PC', 7, new Date("1901")));
-  games.push(new Game(images[2], 'Final Fantasy VIII','Final Fantasy', 'PC', 8, new Date("1901")));
-  games.push(new Game(images[3], 'Mother 3','EarthBound', 'Game Boy Advance', 10, new Date("1901")));
-  games.push(new Game(images[4], 'Super Mario 64','Super Mario', 'Wii Virtual Console', 8, new Date("Sep 24 2020")));
-  games.push(new Game(images[5], 'Platinum','Pokémon', 'Nintendo DS', 10, new Date("1901")));
-  games.push(new Game(images[6], 'Super Metroid','Metroid', 'Wii Virtual Console', 10, new Date("1901")));
-  games.push(new Game(images[7], 'Tales of Symphonia','Tales', 'GameCube', 10, new Date("1901")));
-  games.push(new Game(images[8], 'The World Ends With You','The World Ends With You', 'Nintendo DS', 10, new Date("Jul 16 2019")));
-  games.push(new Game(images[9], 'Xenoblade Chronicles','Xenoblade Chronicles', 'Wii', 10, new Date("1901")));
-  games.push(new Game(images[10], 'New Leaf','Animal Crossing', 'Nintendo 3DS', 8, new Date("1901")));
-  games.push(new Game(images[11], 'Minecraft','Minecraft', 'PC', 7, new Date("1901")));
-  games.push(new Game(images[12], 'Devil Survivor Overclocked','Shin Megami Tensei', 'Nintendo 3DS', 9, new Date("1901")));
-  games.push(new Game(images[13], 'Pikmin 3','Pikmin', 'Wii U', 9, new Date("Aug 6 2020")));
-  games.push(new Game(images[14], 'Chrono Trigger','Chrono', 'Wii Virtual Console', 10, new Date("1901")));
-  games.push(new Game(images[15], 'Aria of Sorrow','Castlevania', 'Game Boy Advance', 10, new Date("1901")));
-  games.push(new Game(images[16], 'Donkey Kong Country 2: Diddy\'s Kong Quest','Donkey Kong Country', 'Wii Virtual Console', 10, new Date("1901")));
-  games.push(new Game(images[17], 'Phoenix Wright: Trials and Tribulations','Ace Attorney', 'Nintendo DS', 10, new Date("1901")));
-  games.push(new Game(images[18], 'The Messenger', '', 'Nintendo Switch', 10, new Date("1901")));
-  games.push(new Game(images[19], 'Persona 3 FES', 'Persona', 'Playstation 3', 9, new Date("1901")));
-  games.push(new Game(images[20], 'Black and White', 'Pokémon', 'Nintendo DS', 9, new Date("1901")));
-  games.push(new Game(images[21], 'Twilight Princess', 'Legend of Zelda, The', 'Wii', 10, new Date("1901")));
-  games.push(new Game(images[22], 'Danganronpa 2: Goodbye Despair', 'Danganronpa', 'PC', 7, new Date("1901")));
-  games.push(new Game(images[23], 'Final Fantasy I & II: Dawn of Souls', 'Final Fantasy', 'Game Boy Advance', 7, new Date("1901")));
-  games.push(new Game(images[24], 'Paper Mario', 'Paper Mario', 'Wii Virtual Console', 9, new Date("1901")));
-  games.push(new Game(images[25], 'Super Smash Bros. Brawl', 'Super Smash Bros.', 'Wii', 9, new Date("1901")));
-  games.push(new Game(images[26], 'Xenoblade Chronicles X', 'Xenoblade Chronicles', 'Wii U', 9, new Date("1901")));
-  games.push(new Game(images[27], 'Echoes: Shadows of Valentia', 'Fire Emblem', 'Nintendo 3DS', 9, new Date("1901")));
-  games.push(new Game(images[28], 'Okamiden', 'Okami', 'Nintendo DS', 8, new Date("1901")));
-  games.push(new Game(images[29], 'The Lost Age', 'Golden Sun', 'Game Boy Advance', 10, new Date("1901")));
-  games.push(new Game(images[30], 'Sword and Shield', 'Pokémon', 'Nintendo Switch', 7, new Date("1901")));
-  games.push(new Game(images[31], 'Ocarina of Time', 'Legend of Zelda, The', 'Wii Virtual Console', 10, new Date("1901")));
-  games.push(new Game(images[32], 'Apollo Justice', 'Ace Attorney', 'Wii Virtual Console', 7, new Date("1901")));
-  games.push(new Game(images[33], 'Super Mario Sunshine', 'Super Mario', 'GameCube', 7, new Date("1901")));
-  games.push(new Game(images[34], 'Pikmin', 'Pikmin', 'Wii', 8, new Date("1901")));
-  games.push(new Game(images[35], 'Final Fantasy V', 'Final Fantasy', 'Game Boy Advance', 7, new Date("1901")));
-  games.push(new Game(images[36], 'EarthBound', 'EarthBound', 'SNES', 8, new Date("1901")));
-  games.push(new Game(images[37], 'Xenoblade Chronicles 2', 'Xenoblade Chronicles', 'Nintendo Switch', 8, new Date("1901")));
-  games.push(new Game(images[38], 'Danganronpa V3: Killing Harmony', 'Danganronpa', 'PC', 8, new Date("1901")));
-  games.push(new Game(images[39], 'Metroid Fusion', 'Metroid', 'Game Boy Advance', 9, new Date("1901")));
-  games.push(new Game(images[40], 'FireRed and LeafGreen', 'Pokémon', 'Game Boy Advance', 8, new Date("1901")));
-  games.push(new Game(images[41], 'Super Smash Bros. Ultimate', 'Super Smash Bros.', 'Nintendo Switch', 9, new Date("1901")));
-  games.push(new Game(images[42], 'New Horizons', 'Animal Crossing', 'Nintendo Switch', 9, new Date("1901")));
-  games.push(new Game(images[43], 'Dark Dawn', 'Golden Sun', 'Nintendo DS', 9, new Date("1901")));
-  games.push(new Game(images[44], 'Portal', 'Portal', 'PC', 9, new Date("1901")));
-  games.push(new Game(images[45], 'The Thousand Year Door', 'Paper Mario', 'GameCube', 10, new Date("1901")));
-  games.push(new Game(images[46], 'Minish Cap', 'Legend of Zelda, The', 'Game Boy Advance', 10, new Date("1901")));
-  games.push(new Game(images[47], 'Phoenix Wright: Ace Attorney', 'Ace Attorney', 'Nintendo DS', 9, new Date("1901")));
-  games.push(new Game(images[48], 'Donkey Kong Country', 'Donkey Kong Country', 'Wii Virtual Console', 9, new Date("1901")));
-  games.push(new Game(images[49], 'Awakening', 'Fire Emblem', 'Nintendo 3DS', 7, new Date("1901")));
-  games.push(new Game(images[50], 'Zero Mission', 'Metroid', 'Game Boy Advance', 8, new Date("1901")));
-  games.push(new Game(images[51], 'X and Y', 'Pokémon', 'Nintendo 3DS', 7, new Date("1901")));
-  games.push(new Game(images[52], 'Sonic Colors', 'Sonic', 'Nintendo DS', 8, new Date("1901")));
-  games.push(new Game(images[53], 'Super Smash Bros. for Wii U', 'Super Smash Bros.', 'Wii U', 8, new Date("1901")));
-  games.push(new Game(images[54], 'Wild World', 'Animal Crossing', 'Nintendo DS', 7, new Date("1901")));
-  games.push(new Game(images[55], 'Xenoblade Chronicles 2: Torna The Golden Country', 'Xenoblade Chronicles', 'Nintendo Switch', 10, new Date("1901")));
-  games.push(new Game(images[56], 'EarthBound Beginnings', 'EarthBound', 'Wii U', 7, new Date("1901")));
-  games.push(new Game(images[57], 'Portal 2', 'Portal', 'PC', 10, new Date("1901")));
-  games.push(new Game(images[58], 'Super Mario Galaxy', 'Super Mario', 'Wii', 8, new Date("1901")));
-  games.push(new Game(images[59], 'Pikmin 2', 'Pikmin', 'Wii', 7, new Date("1901")));
-  games.push(new Game(images[60], 'Age of Calamity', 'Warriors', 'Nintendo Switch', 8, new Date("Jan 13 2021")));
-  games.push(new Game(images[61], 'Yakuza 0', 'Yakuza', 'PC', 10, new Date("Jan 24 2021")));
-  games.push(new Game(images[62], 'OneShot', '', 'PC', 10, new Date("Jan 29 2021")));
+  games.push(new Game(images[0], 'Celeste','', 'PC', new Date("1901")));
+  games.push(new Game(images[1], 'Trigger Happy Havoc','Danganronpa', 'PC', new Date("1901")));
+  games.push(new Game(images[2], 'Final Fantasy VIII','Final Fantasy', 'PC', new Date("1901")));
+  games.push(new Game(images[3], 'Mother 3','EarthBound', 'Game Boy Advance', new Date("1901")));
+  games.push(new Game(images[4], 'Super Mario 64','Super Mario', 'Wii Virtual Console', new Date("Sep 24 2020")));
+  games.push(new Game(images[5], 'Platinum','Pokémon', 'Nintendo DS', new Date("1901")));
+  games.push(new Game(images[6], 'Super Metroid','Metroid', 'Wii Virtual Console', new Date("1901")));
+  games.push(new Game(images[7], 'Tales of Symphonia','Tales', 'GameCube', new Date("1901")));
+  games.push(new Game(images[8], 'The World Ends With You','The World Ends With You', 'Nintendo DS', new Date("Jul 16 2019")));
+  games.push(new Game(images[9], 'Xenoblade Chronicles','Xenoblade Chronicles', 'Wii', new Date("1901")));
+  games.push(new Game(images[10], 'New Leaf','Animal Crossing', 'Nintendo 3DS', new Date("1901")));
+  games.push(new Game(images[11], 'Minecraft','Minecraft', 'PC', new Date("1901")));
+  games.push(new Game(images[12], 'Devil Survivor Overclocked','Shin Megami Tensei', 'Nintendo 3DS', new Date("1901")));
+  games.push(new Game(images[13], 'Pikmin 3','Pikmin', 'Wii U', new Date("Aug 6 2020")));
+  games.push(new Game(images[14], 'Chrono Trigger','Chrono', 'Wii Virtual Console', new Date("1901")));
+  games.push(new Game(images[15], 'Aria of Sorrow','Castlevania', 'Game Boy Advance', new Date("1901")));
+  games.push(new Game(images[16], 'Donkey Kong Country 2: Diddy\'s Kong Quest','Donkey Kong Country', 'Wii Virtual Console', new Date("1901")));
+  games.push(new Game(images[17], 'Phoenix Wright: Trials and Tribulations','Ace Attorney', 'Nintendo DS', new Date("1901")));
+  games.push(new Game(images[18], 'The Messenger', '', 'Nintendo Switch', new Date("1901")));
+  games.push(new Game(images[19], 'Persona 3 FES', 'Persona', 'Playstation 3', new Date("1901")));
+  games.push(new Game(images[20], 'Black and White', 'Pokémon', 'Nintendo DS', new Date("1901")));
+  games.push(new Game(images[21], 'Twilight Princess', 'Legend of Zelda, The', 'Wii', new Date("1901")));
+  games.push(new Game(images[22], 'Danganronpa 2: Goodbye Despair', 'Danganronpa', 'PC', new Date("1901")));
+  games.push(new Game(images[23], 'Final Fantasy I & II: Dawn of Souls', 'Final Fantasy', 'Game Boy Advance', new Date("1901")));
+  games.push(new Game(images[24], 'Paper Mario', 'Paper Mario', 'Wii Virtual Console', new Date("1901")));
+  games.push(new Game(images[25], 'Super Smash Bros. Brawl', 'Super Smash Bros.', 'Wii', new Date("1901")));
+  games.push(new Game(images[26], 'Xenoblade Chronicles X', 'Xenoblade Chronicles', 'Wii U', new Date("1901")));
+  games.push(new Game(images[27], 'Echoes: Shadows of Valentia', 'Fire Emblem', 'Nintendo 3DS', new Date("1901")));
+  games.push(new Game(images[28], 'Okamiden', 'Okami', 'Nintendo DS', new Date("1901")));
+  games.push(new Game(images[29], 'The Lost Age', 'Golden Sun', 'Game Boy Advance', new Date("1901")));
+  games.push(new Game(images[30], 'Sword and Shield', 'Pokémon', 'Nintendo Switch', new Date("1901")));
+  games.push(new Game(images[31], 'Ocarina of Time', 'Legend of Zelda, The', 'Wii Virtual Console', new Date("1901")));
+  games.push(new Game(images[32], 'Apollo Justice', 'Ace Attorney', 'Wii Virtual Console', new Date("1901")));
+  games.push(new Game(images[33], 'Super Mario Sunshine', 'Super Mario', 'GameCube', new Date("1901")));
+  games.push(new Game(images[34], 'Pikmin', 'Pikmin', 'Wii', new Date("1901")));
+  games.push(new Game(images[35], 'Final Fantasy V', 'Final Fantasy', 'Game Boy Advance', new Date("1901")));
+  games.push(new Game(images[36], 'EarthBound', 'EarthBound', 'SNES', new Date("1901")));
+  games.push(new Game(images[37], 'Xenoblade Chronicles 2', 'Xenoblade Chronicles', 'Nintendo Switch', new Date("1901")));
+  games.push(new Game(images[38], 'Danganronpa V3: Killing Harmony', 'Danganronpa', 'PC', new Date("1901")));
+  games.push(new Game(images[39], 'Metroid Fusion', 'Metroid', 'Game Boy Advance', new Date("1901")));
+  games.push(new Game(images[40], 'FireRed and LeafGreen', 'Pokémon', 'Game Boy Advance', new Date("1901")));
+  games.push(new Game(images[41], 'Super Smash Bros. Ultimate', 'Super Smash Bros.', 'Nintendo Switch', new Date("1901")));
+  games.push(new Game(images[42], 'New Horizons', 'Animal Crossing', 'Nintendo Switch', new Date("1901")));
+  games.push(new Game(images[43], 'Dark Dawn', 'Golden Sun', 'Nintendo DS', new Date("1901")));
+  games.push(new Game(images[44], 'Portal', 'Portal', 'PC', new Date("1901")));
+  games.push(new Game(images[45], 'The Thousand Year Door', 'Paper Mario', 'GameCube', new Date("1901")));
+  games.push(new Game(images[46], 'Minish Cap', 'Legend of Zelda, The', 'Game Boy Advance', new Date("1901")));
+  games.push(new Game(images[47], 'Phoenix Wright: Ace Attorney', 'Ace Attorney', 'Nintendo DS', new Date("1901")));
+  games.push(new Game(images[48], 'Donkey Kong Country', 'Donkey Kong Country', 'Wii Virtual Console', new Date("1901")));
+  games.push(new Game(images[49], 'Awakening', 'Fire Emblem', 'Nintendo 3DS', new Date("1901")));
+  games.push(new Game(images[50], 'Zero Mission', 'Metroid', 'Game Boy Advance', new Date("1901")));
+  games.push(new Game(images[51], 'X and Y', 'Pokémon', 'Nintendo 3DS', new Date("1901")));
+  games.push(new Game(images[52], 'Sonic Colors', 'Sonic', 'Nintendo DS', new Date("1901")));
+  games.push(new Game(images[53], 'Super Smash Bros. for Wii U', 'Super Smash Bros.', 'Wii U', new Date("1901")));
+  games.push(new Game(images[54], 'Wild World', 'Animal Crossing', 'Nintendo DS', new Date("1901")));
+  games.push(new Game(images[55], 'Xenoblade Chronicles 2: Torna The Golden Country', 'Xenoblade Chronicles', 'Nintendo Switch', new Date("1901")));
+  games.push(new Game(images[56], 'EarthBound Beginnings', 'EarthBound', 'Wii U', new Date("1901")));
+  games.push(new Game(images[57], 'Portal 2', 'Portal', 'PC', new Date("1901")));
+  games.push(new Game(images[58], 'Super Mario Galaxy', 'Super Mario', 'Wii', new Date("1901")));
+  games.push(new Game(images[59], 'Pikmin 2', 'Pikmin', 'Wii', new Date("1901")));
+  games.push(new Game(images[60], 'Age of Calamity', 'Warriors', 'Nintendo Switch', new Date("Jan 13 2021")));
+  games.push(new Game(images[61], 'Yakuza 0', 'Yakuza', 'PC', new Date("Jan 24 2021")));
+  games.push(new Game(images[62], 'OneShot', '', 'PC', new Date("Jan 29 2021")));
 
 }
 
@@ -255,16 +254,18 @@ function displayGames() {
       overlay = document.createElement("div");
       overlay.className = "overlay";
 
-      if (checkDate(games[count].date) != false) {
+      // If the date for the current game is valid and was beaten after the year 2005, else enter "N/A"
+      if (checkDate(games[count].date) != false && games[count].date > "2005") {
         date = games[count].date.toLocaleDateString("en-US", options);
       }
       else {
         date = "N/A";
       }
 
+      // Create the text that appears on hover with the game properties
       text = document.createElement("div");
       text.className = "text";
-      text.innerHTML = games[count].title + "<br><br>" + games[count].series + "<br><br>" + games[count].platform + "<br><br>" + games[count].rating + "/10<br><br>" + date;
+      text.innerHTML = games[count].title + "<br><br>" + games[count].series + "<br><br>" + games[count].platform + "<br><br>" + date;
       console.log(games[count].title);
       games[count].image.id = games[count].title;
  
@@ -304,6 +305,10 @@ function sortGames(num) {
   // 1: Title A-Z
   // 2: Series A-Z
   // 3: Platform A-Z
+  // 5: Rating Low-High
+  // 4: Rating High-Low
+  // 6: Date Last Beat Descending
+  // 7: Date Last Beat Ascending
   switch(num) {
     case 1:
       games = games.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
@@ -330,6 +335,7 @@ function sortGames(num) {
   displayGames();
 }
 
+// Check if date is valid date, return  boolean
 function checkDate(date){
   return date.getTime() === date.getTime();
 }
