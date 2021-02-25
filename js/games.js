@@ -2,7 +2,7 @@ var images = [];
 var favImages = [];
 var games = [];
 var favGames = [];
-var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
 
 var imagePaths = [
   './img/videogames/celeste.png',
@@ -67,17 +67,24 @@ var imagePaths = [
   './img/videogames/pikmin2.png',
   './img/videogames/aoc.png',
   './img/videogames/yakuza0.png',
-  './img/videogames/oneshot.png'
+  './img/videogames/oneshot.png',
+  './img/videogames/fe-rd.png',
+  './img/videogames/kss-switch.png',
+  './img/videogames/alttp-switch.png',
+  './img/videogames/dqxis.png',
+  './img/videogames/kdl3.png',
+  './img/videogames/999.png'
 ];
 var favImagePaths = ['./img/videogames/fe-por.png', './img/videogames/gs.png', './img/videogames/p5.png', './img/videogames/okami.png', './img/videogames/botw.png'];
 
 class Game {
-  constructor(image, title, series, platform, date){
+  constructor(image, title, series, platform, date, firstClear){
     this.image = image;
     this.title = title;
     this.series = series;
     this.platform = platform;
     this.date = date;
+    this.firstClear = firstClear;
   }
 }
 
@@ -109,7 +116,7 @@ function createGames(){
   games.push(new Game(favImages[1], 'Golden Sun','Golden Sun', 'Game Boy Advance', new Date("Aug 8 2020")));
   games.push(new Game(favImages[2], 'Persona 5','Persona', 'Playstation 3', new Date("1901")));
   games.push(new Game(favImages[3], 'Okami', 'Okami', 'Wii', new Date("1901")));
-  games.push(new Game(favImages[4], 'Breath of the Wild','Legend of Zelda, The', 'Wii U', new Date("1901")));
+  games.push(new Game(favImages[4], 'Breath of the Wild','Legend of Zelda, The', 'Wii U', new Date("Sep 20 2020")));
 
   games.push(new Game(images[0], 'Celeste','', 'PC', new Date("1901")));
   games.push(new Game(images[1], 'Trigger Happy Havoc','Danganronpa', 'PC', new Date("1901")));
@@ -171,9 +178,15 @@ function createGames(){
   games.push(new Game(images[57], 'Portal 2', 'Portal', 'PC', new Date("1901")));
   games.push(new Game(images[58], 'Super Mario Galaxy', 'Super Mario', 'Wii', new Date("1901")));
   games.push(new Game(images[59], 'Pikmin 2', 'Pikmin', 'Wii', new Date("1901")));
-  games.push(new Game(images[60], 'Age of Calamity', 'Warriors', 'Nintendo Switch', new Date("Jan 13 2021")));
-  games.push(new Game(images[61], 'Yakuza 0', 'Yakuza', 'PC', new Date("Jan 24 2021")));
-  games.push(new Game(images[62], 'OneShot', '', 'PC', new Date("Jan 29 2021")));
+  games.push(new Game(images[60], 'Age of Calamity', 'Warriors', 'Nintendo Switch', new Date("Jan 13 2021"), "first"));
+  games.push(new Game(images[61], 'Yakuza 0', 'Yakuza', 'PC', new Date("Jan 24 2021"), "first"));
+  games.push(new Game(images[62], 'OneShot', '', 'PC', new Date("Jan 29 2021"), "first"));
+  games.push(new Game(images[63], 'Radiant Dawn', 'Fire Emblem', 'Wii', new Date("Dec 27 2020")));
+  games.push(new Game(images[64], 'Kirby Super Star', 'Kirby', 'Nintendo Switch Online', new Date("Aug 23 2020")));
+  games.push(new Game(images[65], 'A Link to the Past', 'Legend of Zelda, The', 'Nintendo Switch Online', new Date("Apr 29 2020")));
+  games.push(new Game(images[66], 'Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition', 'Dragon Quest', 'Nintendo Switch', new Date("1901"), "playing"));
+  games.push(new Game(images[67], 'Kirby\'s Dream Land 3', 'Kirby', 'Nintendo Switch Online', new Date("Feb 7 2021")));
+  games.push(new Game(images[68], 'Nine Hours, Nine Persons, Nine Doors', 'Zero Escape', 'Nintendo DS', new Date("Feb 3 2021"), "first"));
 
 }
 
@@ -260,6 +273,14 @@ function displayGames() {
       }
       else {
         date = "N/A";
+      }
+
+      // If the game was beaten for the first time then change the image class
+      if (games[count].firstClear == "first") {
+        games[count].image.className = "vg-icon-new";
+      }
+      if (games[count].firstClear == "playing") {
+        games[count].image.className = "vg-icon-progress";
       }
 
       // Create the text that appears on hover with the game properties
