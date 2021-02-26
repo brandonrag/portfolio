@@ -326,10 +326,8 @@ function sortGames(num) {
   // 1: Title A-Z
   // 2: Series A-Z
   // 3: Platform A-Z
-  // 5: Rating Low-High
-  // 4: Rating High-Low
-  // 6: Date Last Beat Descending
-  // 7: Date Last Beat Ascending
+  // 4: Date Last Beat Descending
+  // 5: Date Last Beat Ascending
   switch(num) {
     case 1:
       games = games.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
@@ -340,16 +338,10 @@ function sortGames(num) {
     case 3:
       games = games.sort((a,b) => (a.platform > b.platform) ? 1 : ((b.platform > a.platform) ? -1 : 0));
       break;
-    case 5:
-      games = games.sort((a,b) => (a.rating > b.rating) ? 1 : ((b.rating > a.rating) ? -1 : 0));
-      break;
     case 4:
-      games = games.sort((a,b) => (b.rating > a.rating) ? 1 : ((a.rating > b.rating) ? -1 : 0));
-      break;
-    case 6:
       games = games.sort((a,b) => (b.date > a.date) ? 1 : ((a.date > b.date) ? -1 : 0));
       break;
-    case 7:
+    case 5:
       games = games.sort((a,b) => (a.date > b.date) ? 1 : ((b.date > a.date) ? -1 : 0));
       break;
   }
