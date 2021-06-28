@@ -73,7 +73,15 @@ var imagePaths = [
   './img/videogames/alttp-switch.png',
   './img/videogames/dqxis.png',
   './img/videogames/kdl3.png',
-  './img/videogames/999.png'
+  './img/videogames/999.png',
+  './img/videogames/cadence.png',
+  './img/videogames/la.png',
+  './img/videogames/mhrise.png',
+  './img/videogames/balan.png',
+  './img/videogames/kiwami.png',
+  './img/videogames/evoland.png',
+  './img/videogames/valhalla.png',
+  './img/videogames/metroid sr.png'
 ];
 var favImagePaths = ['./img/videogames/fe-por.png', './img/videogames/gs.png', './img/videogames/p5.png', './img/videogames/okami.png', './img/videogames/botw.png'];
 
@@ -187,6 +195,14 @@ function createGames(){
   games.push(new Game(images[66], 'Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition', 'Dragon Quest', 'Nintendo Switch', new Date("1901"), "playing"));
   games.push(new Game(images[67], 'Kirby\'s Dream Land 3', 'Kirby', 'Nintendo Switch Online', new Date("Feb 7 2021")));
   games.push(new Game(images[68], 'Nine Hours, Nine Persons, Nine Doors', 'Zero Escape', 'Nintendo DS', new Date("Feb 3 2021"), "first"));
+  games.push(new Game(images[69], 'Cadence of Hyrule: Crypt of the NecroDancer Featuring The Legend of Zelda', 'Crypt of the NecroDancer', 'Nintendo Switch', new Date("Jul 16 2019"), "first"));
+  games.push(new Game(images[70], 'Link\'s Awakening', 'Legend of Zelda, The', 'Nintendo Switch', new Date("Sep 28 2019")));
+  games.push(new Game(images[71], 'Monster Hunter Rise', 'Monster Hunter', 'Nintendo Switch', new Date("Apr 21 2021"), "first"));
+  games.push(new Game(images[72], 'Balan Wonderworld', '', 'PC', new Date("May 5 2021"), "first"));
+  games.push(new Game(images[73], 'Yakuza Kiwami', 'Yakuza', 'PC', new Date("May 20 2021"), "first"));
+  games.push(new Game(images[74], 'Evoland', 'Evoland', 'Nintendo Switch', new Date("May 26 2021"), "first"));
+  games.push(new Game(images[75], 'VA-11 HALL-A', '', 'PC', new Date("May 31 2021"), "first"));
+  games.push(new Game(images[76], 'Metroid: Samus Returns', 'Metroid', 'Nintendo 3DS', new Date("June 18 2021"), "first"));
 
 }
 
